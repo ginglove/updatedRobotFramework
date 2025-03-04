@@ -1,0 +1,31 @@
+#This file contain only library for all Robot tests
+jsonpointer<2,>=1.7
+#virtualenv
+six<2,>=1.7.3
+requests>=2.30.0 #also used by post result to TMT
+jsonschema==3.0.0a3
+RESTinstance==1.4.0 #install flex with dependencies jsonpointer<2,>=1.7, PyYAML<4,>=3.11, six<2,>=1.7.3
+pyocr==0.5.3
+future==0.16.0
+robotframework-appiumlibrary
+robotframework
+robotframework-httplibrary==0.4.2
+robotframework-requests
+robotframework-sshlibrary==3.3.0
+robotframework-pabot==0.45
+robotframework-seleniumlibrary == 6.3.0
+robotframework-databaselibrary
+robotframework-lsp
+urllib3 ==2.3.0
+#robotframework-tidy
+xlrd==1.2.0
+python-dateutil==2.8.0
+prompt-toolkit==1.0.15
+#flex==6.13.2
+pymysql
+pika==0.12.0
+#webdrivermanager
+psycopg2-binary
+openpyxl==3.0.5
+Appium-Python-Client
+pandas == 2.2.3
