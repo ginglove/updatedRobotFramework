@@ -13,11 +13,11 @@ path_1="$(dirname $PWD)"
 path="$(dirname "$(dirname $PWD)")"
 parentpath="$(dirname "$(dirname "$(dirname $PWD)")")"
 echo "PWD path : $PWD_path"
-echo "Path : $path"
-RESULT_FOLDER="$PWD_path/7_results"
+echo "Path : $path_1"
+RESULT_FOLDER="$path_1/7_results"
 
 
-ROBOT_FILES="$PWD_path/4_test_cases"
+ROBOT_FILES="$path_1/4_test_cases"
 
 ############ REMOVE RESULT FOLDER ##################
 # echo "=== Remove result folder==="

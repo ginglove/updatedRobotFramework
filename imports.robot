@@ -41,5 +41,6 @@ Resource     ./2_elements/loginpage.robot
 Resource     ./3_keywords/login_keywords.robot
 #### VARIABLES  ####
 Resource     ./5_test_datas/variables.robot
+Resource     ./5_test_datas/testData.robot
 Resource     config_dev.robot
 Resource     config_test.robot

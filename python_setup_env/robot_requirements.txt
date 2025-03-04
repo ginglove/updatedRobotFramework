@@ -17,9 +17,9 @@ robotframework-seleniumlibrary == 6.3.0
 robotframework-databaselibrary
 robotframework-lsp
 urllib3 ==2.3.0
-#robotframework-tidy
+robotframework-tidy
 xlrd==1.2.0
-python-dateutil==2.8.0
+python-dateutil==2.8.2
 prompt-toolkit==1.0.15
 #flex==6.13.2
 pymysql
@@ -29,3 +29,4 @@ psycopg2-binary
 openpyxl==3.0.5
 Appium-Python-Client
 pandas == 2.2.3
+xlrd
