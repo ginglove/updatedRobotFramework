@@ -36,7 +36,7 @@ Resource          ./1_common/web_common/Web_Common_Keywords.robot
 Resource          ./1_common/api_common/API_Common_Keywords.robot          
 
 #### ROBOT ELEMENT ####
-Resource     ./2_elements/Login_Page.robot
+Resource     ./2_elements/Login_Elements.robot
 #### ROBOT KEYWORDS ####
 Resource     ./3_keywords/Login_Keywords.robot
 #### VARIABLES  ####
