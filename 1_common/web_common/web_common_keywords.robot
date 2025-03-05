@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../imports.robot
+Resource    ../../imports.robot
 
 
 *** Variables ***
@@ -8,7 +8,7 @@ ${NUMBERS}      1234567890
 
 
 *** Keywords ***
-[Common] - click element checkbox by text
+[Common] - Click element checkbox by text
     [Arguments]    ${text}
     Wait Until Keyword Succeeds
     ...    30s
@@ -19,7 +19,7 @@ ${NUMBERS}      1234567890
     ...    error=Could not find //label[contains(text(),'${text}')] element.
     click element    //label[contains(text(),'${text}')]
 
-[Common] - click element by text
+[Common] - Click element by text
     [Arguments]    ${text}
     Wait Until Keyword Succeeds
     ...    30s
@@ -215,7 +215,7 @@ ${NUMBERS}      1234567890
     ...    error=Could not find ${element_loc} element.
     Select Frame    ${element_loc}
 
-[Common] - click element
+[Common] - Click element
     [Arguments]    ${element_loc}
     wait until keyword succeeds
     ...    20s
@@ -364,7 +364,7 @@ ${NUMBERS}      1234567890
     wait until keyword succeeds    ${timeout}s    1s    element should not be visible    ${locator}
 #    Register Keyword To Run On Failure    ${previous_kw}
 
-[Common] - Wait For Spinner is not Visible
+[Common] - Wait for Spinner is not Visible
     ${previous_kw}    Register Keyword To Run On Failure    Nothing
     Wait Until Keyword Succeeds
     ...    30s
@@ -454,7 +454,7 @@ ${NUMBERS}      1234567890
     [Arguments]    ${button}
     Page Should Not Contain Element    xpath=${button}
 
-[Common] - verify confirmation message is
+[Common] - Verify confirmation message is
     [Arguments]    ${message}
     wait until page contains    ${message}
     page should contain    ${message}
@@ -463,16 +463,16 @@ ${NUMBERS}      1234567890
     [Arguments]    ${title}
     wait until page contains    ${title}    30
 
-[Common] - verify element is displayed
+[Common] - Verify element is displayed
     [Arguments]    ${locator}
     element should be enabled    ${locator}
 
-[Common] - get text by attribute
+[Common] - Get text by attribute
     [Arguments]    ${element_loc}    ${atrribute}
     ${get_value}    Get element attribute    ${element_loc}    ${atrribute}
     RETURN    ${get_value}
 
-[Common] - verify page contain message
+[Common] - Verify page contain message
     [Arguments]    ${element_loc}
     wait until keyword succeeds
     ...    5s
@@ -482,7 +482,7 @@ ${NUMBERS}      1234567890
     ...    timeout=20s
     ...    error=Could not find ${element_loc} element.
 
-[Common] - get text
+[Common] - Get text
     [Arguments]    ${element_loc}
     wait until keyword succeeds
     ...    5s
@@ -501,7 +501,7 @@ ${NUMBERS}      1234567890
         page should contain    ${label}
     END
 
-[Common] - verify dropdownlist contain options
+[Common] - Verify dropdownlist contain options
     [Arguments]    ${dropdown_loc}    ${dropdown_item_loc}    @{options}
     wait until keyword succeeds    20s    2s    page should contain element    ${dropdown_loc}
     [Common] - Execute JavaScript Click On Element By Xpath    ${dropdown_loc}
@@ -513,7 +513,7 @@ ${NUMBERS}      1234567890
         should contain    ${get_all_options}    ${expected_option}
     END
 
-[Common] - verify dropdownlist contain correct options
+[Common] - Verify dropdownlist contain correct options
     [Arguments]    ${dropdown_loc}    @{options}
     wait until keyword succeeds    10s    1s    Element Should Be Visible    ${dropdown_loc}
     [Common] - Execute JavaScript Click On Element By Xpath    ${dropdown_loc}
@@ -532,7 +532,7 @@ ${NUMBERS}      1234567890
     [Arguments]    ${element_loc}
     wait until keyword succeeds    5s    1s    Element Should Be Visible    ${element_loc}
 
-[Common] - verify message is
+[Common] - Verify message is
     [Arguments]    ${message}
     wait until keyword succeeds    5s    1s    page should contain    ${message}
 
@@ -596,20 +596,20 @@ ${NUMBERS}      1234567890
     [Arguments]    ${page_title}
     [Common] - check page contains element text    ${page_title}
 
-[Common] - check page contains dropdownlists with valid data
+[Common] - Check page contains dropdownlists with valid data
     [Arguments]    @{ddl_names}
     FOR    ${name}    IN    @{ddl_names}
         ${ddl_text}    get text    id=ddl_${name}
         should not start with    ${ddl_text}    None
     END
 
-[Common] - check page doesn't contain element texts
+[Common] - Check page doesn't contain element texts
     [Arguments]    @{elements}
     FOR    ${element}    IN    @{elements}
         page should not contain    ${element}
     END
 
-[Common] - convert to lowercase and replace spaces into underscore
+[Common] - Convert to lowercase and replace spaces into underscore
     [Arguments]    ${string}
     ${string_lower}    convert to lowercase    ${string}
     ${string_repl}    replace string    ${string_lower}    ${SPACE}    _
@@ -648,7 +648,7 @@ ${NUMBERS}      1234567890
 [Common] - Scroll right on page
     Execute Javascript    window.scrollTo(document.body.scrollWidth,document.body.scrollHeight);
 
-[Common] - scroll down on page
+[Common] - Scroll down on page
     Execute Javascript    window.scrollTo(0,document.body.scrollHeight);
 
 [Common] - Get page source

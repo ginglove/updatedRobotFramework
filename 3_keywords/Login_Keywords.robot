@@ -5,7 +5,7 @@ Resource            ../imports.robot
 
 
 *** Keywords ***
-[Kw] - User input User information for registration
+[KW] - User input User information for registration
     [Arguments]
     ...    ${firstname}
     ...    ${lastname}
@@ -25,5 +25,5 @@ Resource            ../imports.robot
     [Common] - Input text into textbox    ${txtConfirmPassword}    ${confirm_password}
     [Common] - Input text into textbox    ${txtUserBio}    ${description}
 
-[Kw] - User click button Submit
+[KW] - User click button Submit
     [Common] - Click element    ${btnSubmit}

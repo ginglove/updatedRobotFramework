@@ -30,15 +30,15 @@ Library           ./0_resources/pythonlibs/urlparse_compat.py
 Library           ./0_resources/pythonlibs/sql_db.py
 
 #### ROBOT WEB COMMON KEYWORDS ####
-Resource          ./1_common/bdd_web_common_keywords.robot
-Resource          ./1_common/sql_common_keywords.robot
-Resource          ./1_common/web_common_keywords.robot
-Resource          ./1_common/api_common/api_common_keywords.robot          
+Resource          ./1_common/web_common/BDD_Web_Common_Keywords.robot
+Resource          ./1_common/databases_common/SQL_Common_Keywords.robot
+Resource          ./1_common/web_common/Web_Common_Keywords.robot
+Resource          ./1_common/api_common/API_Common_Keywords.robot          
 
 #### ROBOT ELEMENT ####
-Resource     ./2_elements/loginpage.robot
+Resource     ./2_elements/Login_Page.robot
 #### ROBOT KEYWORDS ####
-Resource     ./3_keywords/login_keywords.robot
+Resource     ./3_keywords/Login_Keywords.robot
 #### VARIABLES  ####
 Resource     ./5_test_datas/variables.robot
 Resource     ./5_test_datas/testData.robot

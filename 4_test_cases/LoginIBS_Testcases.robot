@@ -2,13 +2,15 @@
 # Documentation    Suite description
 Resource            ../imports.robot
 
-Test Setup          [Common] - Open Chrome Browser with mode   ${URL}  ${browser}
+Test Setup          [Common] - Open Chrome Browser with mode   ${URL}  ${BROWSER}
 Test Teardown       Close All Browsers
 
 
 *** Test Cases ***
 [TC 02] - User input valid user information
-    [Kw] - User input User information for registration
+    [Tags]    TC_02
+    [Documentation]    This testcases which test the valiation of user information
+    [KW] - User input User information for registration
     ...    ${firstName}
     ...    ${lastName}
     ...    ${username}
@@ -16,4 +18,4 @@ Test Teardown       Close All Browsers
     ...    ${password}
     ...    ${confirm_password}
     ...    ${description}
-    [Kw] - User click button Submit
+    [KW] - User click button Submit

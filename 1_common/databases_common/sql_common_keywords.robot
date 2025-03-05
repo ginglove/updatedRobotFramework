@@ -1,5 +1,5 @@
 *** Settings ***
-Resource          ../imports.robot
+Resource          ../../imports.robot
 
 *** Variables ***
 ${DB_CONNECT_STRING}    'ibs/Ibs_2021@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.2.29)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ibdn)))'

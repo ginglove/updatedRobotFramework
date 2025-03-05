@@ -1,5 +1,5 @@
 *** Settings ***
-Resource          ../imports.robot
+Resource          ../../imports.robot
 
 
 *** Keywords ***
